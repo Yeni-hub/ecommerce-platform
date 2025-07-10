@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIZO - Productos Hombre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-basketball">
+                        <div class="basketball">
+                            <div class="basketball-lines"></div>
+                        </div>
+                        <span class="logo-text-inside">ORTZON</span>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                    <a href="hombre.html" class="nav-link active">HOMBRE</a>
+                    <a href="mujer.html" class="nav-link">MUJER</a>
+                    <a href="deporte.html" class="nav-link">DEPORTE</a>
+                    <a href="oferta.html" class="nav-link">OFERTAS</a>
+                    <a href="contacto.html" class="nav-link">CONTACTO</a>
+                </nav>
+
+                <!-- Search and Cart -->
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar Producto" class="search-input" id="searchInput">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                    <div class="cart-container">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main products-page">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">
+                    PRODUCTOS DEPORTIVOS<br>
+                    <span class="page-title-orange">HOMBRE</span>
+                </h1>
+            </div>
+
+            <div class="products-grid-large">
+                <!-- Product 1 -->
+                <div class="product-card-large" data-id="11">
+                    <div class="product-image-large">
+                        <img src="https://img.kwcdn.com/thumbnail/s/0be7d9184024a069c5052290ef293d68_85e2f943a5a0.jpg?imageView2/2/w/800/q/70/format/webp" alt="Camiseta Sin Mangas">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Camiseta Sin Mangas Performance White</h3>
+                        <p class="product-description">Camiseta deportiva sin mangas en color blanco con logo frontal</p>
+                        <div class="product-price-large">129.900</div>
+                        <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card-large" data-id="12">
+                    <div class="product-image-large">
+                        <img src="https://sportiva.com.co/wp-content/uploads/2024/04/BANDA-PARA-RODILLAS1.jpg" alt="Banda Elástica">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Banda Elástica de Resistencia ProBand</h3>
+                        <p class="product-description">Banda elástica ajustable para piernas con diseño de rayas negras y amarillas para ejercicios de fuerza</p>
+                        <div class="product-price-large">83.000</div>
+                        <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card-large" data-id="13">
+                    <div class="product-image-large">
+                        <img src="https://m.media-amazon.com/images/I/51L41viE0TL._AC_SX679_.jpg" alt="Leggings">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Leggings Compresivos PowerFit</h3>
+                        <p class="product-description">Leggings deportivos ajustados con tecnología de compresión para un mejor rendimiento y recuperación</p>
+                        <div class="product-price-large">79.900</div>
+                        <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card-large" data-id="14">
+                    <div class="product-image-large">
+                        <img src="https://m.media-amazon.com/images/I/61J1M0TjGcL._AC_SX679_.jpg" alt="Camiseta Hoodie">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Camiseta Sin Mangas Urban Hoodie</h3>
+                        <p class="product-description">Camiseta sin mangas tipo hoodie con capucha integrada</p>
+                        <div class="product-price-large">119.900</div>
+                        <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card-large" data-id="15">
+                    <div class="product-image-large">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_737236-MLU73907125365_012024-F.webp" alt="Bolso Deportivo">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Bolso Deportivo CoreGear Gris/Amarillo</h3>
+                        <p class="product-description">Maletín de gimnasio con diseño robusto en tonos gris oscuro y amarillo</p>
+                        <div class="product-price-large">190.900</div>
+                        <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Información -->
+                <div class="footer-column">
+                    <h3>Información</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Envíos y Devoluciones</a></li>
+                    </ul>
+                </div>
+                <!-- Soporte -->
+                <div class="footer-column">
+                    <h3>Atención al Cliente</h3>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+                <!-- Redes Sociales -->
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#"><span>📘</span></a>
+                        <a href="#"><span>📸</span></a>
+                        <a href="#"><span>🐦</span></a>
+                        <a href="#"><span>🎥</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PRIZO Deportes. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORTZON - Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-basketball">
+                        <div class="basketball">
+                            <div class="basketball-lines"></div>
+                        </div>
+                        <span class="logo-text-inside">ORTZON</span>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                    <a href="hombre.html" class="nav-link">HOMBRE</a>
+                    <a href="mujer.html" class="nav-link">MUJER</a>
+                    <a href="deporte.html" class="nav-link">DEPORTE</a>
+                    <a href="oferta.html" class="nav-link">OFERTAS</a>
+                    <a href="contacto.html" class="nav-link">CONTACTO</a>
+                </nav>
+
+                <!-- Search and Cart -->
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar Producto" class="search-input" id="searchInput">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                    <div class="cart-container">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main checkout-page">
+        <div class="container">
+            <div class="checkout-container">
+                <div class="checkout-form">
+                    <!-- Shipping Information -->
+                    <div class="form-section">
+                        <h2 class="form-title">Información de envío</h2>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                <input type="text" class="form-input" id="nombre">
+                            </div>
+                            <div class="form-group">
+                                <label>Número de teléfono</label>
+                                <input type="tel" class="form-input" id="telefono">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-input" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Ciudad</label>
+                                <input type="text" class="form-input" id="ciudad">
+                            </div>
+                            <div class="form-group">
+                                <label>Departamento</label>
+                                <input type="text" class="form-input" id="departamento">
+                            </div>
+                            <div class="form-group-small">
+                                <div class="form-group">
+                                    <label>ZIP</label>
+                                    <input type="text" class="form-input" id="zip1">
+                                </div>
+                                <div class="form-group">
+                                    <label>ZIP</label>
+                                    <input type="text" class="form-input" id="zip2">
+                                </div>
+                            </div>
+                            <div class="form-group full-width">
+                                <label>Dirección</label>
+                                <input type="text" class="form-input" id="direccion">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Delivery Date -->
+                    <div class="form-section">
+                        <h2 class="form-title">Escoger fecha de entrega</h2>
+                        <div class="delivery-section">
+                            <div class="delivery-inputs">
+                                <div class="form-group">
+                                    <label>Datos</label>
+                                    <input type="text" class="form-input" id="fechaSeleccionada" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label>Nota</label>
+                                    <textarea class="form-input" id="nota" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Calendar -->
+                            <div class="calendar-container">
+                                <div class="calendar-header">
+                                    <button class="calendar-nav" id="prevMonth">←</button>
+                                    <h3 class="calendar-title" id="calendarTitle">Agosto 2023</h3>
+                                    <button class="calendar-nav" id="nextMonth">→</button>
+                                </div>
+                                <div class="calendar-grid">
+                                    <div class="calendar-day-header">Dom</div>
+                                    <div class="calendar-day-header">Lun</div>
+                                    <div class="calendar-day-header">Mar</div>
+                                    <div class="calendar-day-header">Mié</div>
+                                    <div class="calendar-day-header">Jue</div>
+                                    <div class="calendar-day-header">Vie</div>
+                                    <div class="calendar-day-header">Sáb</div>
+                                    <!-- Calendar days will be generated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <div id="cartItems">
+                        <!-- Cart items will be populated by JavaScript -->
+                    </div>
+                    <button class="buy-now-btn" id="buyNowBtn">COMPRAR AHORA</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
