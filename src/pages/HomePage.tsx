@@ -1,10 +1,8 @@
-import React from 'react';
-
 interface HomePageProps {
   onNavigate: (page: string) => void;
 }
 
-const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
+export default function HomePage({ onNavigate }: HomePageProps) {
   const categories = [
     {
       title: 'FÚTBOL',
@@ -107,6 +105,4 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       </section>
     </div>
   );
-};
-
-export default HomePage;
+}
